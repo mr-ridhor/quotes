@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="quote.css">
+   <title>Document</title>
+</head>
+<body>
+  <div id="container">
+      <button id="btn">Press for new quote</button>
+      <div id="output">Press the button togenerate a Quote!</div>
+  </div>
+   <script>
+      let btn =document.getElementById('btn');
+      let output = document.getElementById('output');
+      let quote = [
+         "All that gliters is not gold",
+         "A rolling stone gather no moss",
+         "Don't let Yesterday Take up too much of today!",
+         "Failure will never overtake me if my dtermination to succeed is strong enough",
+         "Enough is enough!!",
+         "More money is more money!"
+      ]
+      btn.addEventListener('click',function(){
+         var randomquote = quote[Math.floor(Math.random()* quote.length)];
+         output.innerHTML = randomquote;
+      })
+   </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+   background-color: #565;
+}
+#container{
+   background-color: #0f2431;
+   border: 5px solid #f5e4c3;
+   height:275px;
+   width:750px;
+   margin:0 auto;
+   text-align:center;
+}
+#btn{
+   margin: 50px  auto;
+   height: 50px;
+   width: 250px;
+   font-size: 20px;
+   background-color: #f5f5;
+}
+#output{
+   margin: 25px auto;
+   font-size: 30px;
+   color: white;
+}
